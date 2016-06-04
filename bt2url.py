@@ -17,7 +17,7 @@ def start():
         #カレントディレクトリのフャイル取得
         files = os.listdir("./")
         for file in files:
-            if (re.search(".+[.][torrent]", file) is not None and
+            if (re.search(".+[.]+torrent", file) is not None and
                 os.path.isfile(file)):
                 torrent = open(file, 'rb').read()
                 printMeta(torrent)

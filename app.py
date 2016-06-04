@@ -186,6 +186,7 @@ def login(data):
             raise Exception("login failed")
 
         try:
+            #login failed窓口が現すと中止する
             handles = findwindows.find_windows(title_re='Verification Failed', class_name="#32770")
             if len(handles) > 0:
                 raise Exception("Incorrect username or password")
