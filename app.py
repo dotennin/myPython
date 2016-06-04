@@ -224,17 +224,22 @@ def logOut():
 
 @flask.route("/", methods=['GET', 'POST'])
 def main():
-
     result = None
-    apple_id = request.args.get('apple_id')
+    if request.method == 'POST':
+        apple_id = request.form['apple_id']
+        password = request.form['password']
+        redeem_code = request.form['redeem_code']
+    else:
+        apple_id = request.args.get('apple_id')
+        password = request.args.get('password')
+        redeem_code = request.args.get('redeem_code')
+
     if apple_id == "":
-        return jsonify(ResultSet=result)
-    password = request.args.get('password')
+            return jsonify(ResultSet=result)
     if password == "":
-        return jsonify(ResultSet=result)
-    redeem_code = request.args.get('redeem_code')
+            return jsonify(ResultSet=result)
     if redeem_code == "":
-        return jsonify(ResultSet=result)
+            return jsonify(ResultSet=result)
 
     if (apple_id is not None and
         password is not None and
