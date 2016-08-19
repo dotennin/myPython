@@ -1,4 +1,4 @@
-#coding:utf-8
+# -*-coding:UTF-8 -*-
 import json, urllib2
 
 url = 'http://weather.livedoor.com/forecast/webservice/json/v1?city=400040'

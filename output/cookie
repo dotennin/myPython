@@ -1,0 +1,8 @@
+# Netscape HTTP Cookie File
+# http://curl.haxx.se/rfc/cookie_spec.html
+# This is a generated file!  Do not edit.
+
+.backlog.jp	TRUE	/	FALSE	1481942395	lsk	nndo
+nndo.backlog.jp	FALSE	/	TRUE		JSESSIONID	06E4346F137CAF0083E27CE7F4003AEA-mc2.4
+nndo.backlog.jp	FALSE	/	TRUE		login	64ef5396d0e45a7740c1a41ddb5d2b91
+nndo.backlog.jp	FALSE	/	TRUE		issueLastUpdatedNum	100
