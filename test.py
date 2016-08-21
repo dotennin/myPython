@@ -11,9 +11,9 @@ import urllib, urllib2
 import cookielib, json
 import re
 from xml.sax.saxutils import *
-
-output = open('./output/txt/cside.txt', 'wb')
-cookie_file = './output/cookie'
+path_sep = os.pathsep
+output = open('.' + path_sep + 'output' + path_sep + 'txt'+ path_sep + 'cside.txt', 'wb')
+cookie_file = '.' + path_sep +'output' + path_sep +'cookie'
 cookie_exists = os.path.exists(cookie_file)
 
 cj = cookielib.MozillaCookieJar(cookie_file)
